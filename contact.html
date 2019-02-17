@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Aleksandra Kubiak | Portfolio</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Aleksandra Kubiak">
+        <meta name="description" content="Moje portfolio - zapraszam do zapoznania się z moją twórczością.">
+        <meta name="keywords" content="portfolio, tworzenie stron, grouchysnaper">
+        <meta lang="pl-PL">
+        <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Shadows+Into+Light+Two" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+        
+    </head>
+    <body>       
+        <section class="main-photo"> 
+            <div class="top-nav">
+                <img class="logo" height="80px" src="https://i0.wp.com/www.cathmackenzie.com/wp-content/uploads/2018/05/logo-transparent.png" alt="logo" href="index.html">
+                <ul class="links">
+                    <a href="pusta_templatka.html"><li>Home</li></a>
+                    <a href="about-me.html"></a><li>About me</li></a>
+                    <a href="portfolio.html"></a><li>Portfolio</li></a>
+                    <a href="contact.html"></a><li>Contact</li></a>
+                </ul>
+                tutaj jakiś gadżecik
+            </div>
+            <div class="author">
+                <h1 id="live-text"></h1>
+            </div>
+            <div class="pointer">
+                <a href="#content"><img height="50px" src="https://monasteryeventcenter.com/wp-content/uploads/revslider/home/white-down-arrow-png-2.png"></a>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="row">
+                <div class="category col-lg-3">1</div>
+                <div class="category col-lg-3">2</div>
+                <div class="category col-lg-3">3</div>
+            </div>
+            <div class="row">
+                <div class="category col-lg-3">X</div>
+                <div class="category col-lg-3">X</div>
+                <div class="category col-lg-3">X</div>
+            </div>
+            <div class="row">
+                <div class="category col-lg-3">X</div>
+                <div class="category col-lg-3">X</div>
+                <div class="category col-lg-3">X</div>
+            </div>
+        </section>
+        <section class="social">
+
+        </section>
+
+        <script>
+            var myText = 'Michelle Lawson';
+            var myArray = myText.split("");
+            var loopTimer;
+            function frameLooper() {
+            if(myArray.length > 0) {
+            document.getElementById("live-text").innerHTML += myArray.shift();
+            } else {
+            clearTimeout(loopTimer);
+            return false;
+            }
+            loopTimer = setTimeout('frameLooper()',95);
+            }
+            frameLooper();
+        </script>
+
+        
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
